@@ -102,7 +102,7 @@
          */
         public function getResponse(RequestInterface $request)
         {
-            $response = $this->sendRequest($request);
+            $response = parent::getResponse($request);
 
             try {
                 $parsed = $this->parseResponse($response);
